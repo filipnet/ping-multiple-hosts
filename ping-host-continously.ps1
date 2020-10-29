@@ -1,0 +1,2 @@
+@Echo off & Setlocal EnableDelayedExpansion 
+for /l %%a in (0) do @for /f "Tokens= 3,*" %%i in ('ping -n 1 127.0.0.1^|find "Antwort"') do @echo !Time! %%j & @echo !Time! %%j >> C:\Temp\icmptest_localhost.txt
